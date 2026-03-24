@@ -10,7 +10,11 @@ int separar_palabras(char *poema, char *buffer){
     static int pindice = 0;
     int bindice = 0;
 
-    while(poema[pindice] != '\0' && ((poema[pindice]>='a' && poema[pindice]<='z') || (poema[pindice]>='A' && poema[pindice]<='Z')) ){
+    // Pregunto no es el  '\0' o es una letra
+    while(poema[pindice] != '\0' && 
+        ((poema[pindice]>='a' && poema[pindice]<='z') || 
+        (poema[pindice]>='A' && poema[pindice]<='Z')) ){
+            
         buffer[bindice] = poema[pindice];
         pindice++;
         bindice++;
