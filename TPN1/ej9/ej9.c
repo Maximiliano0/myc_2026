@@ -39,7 +39,7 @@ void handler_sigint(int sig) {
 
 // Función principal
 int main (void){
-   estados_t estado = INIT;
+   estados_t estado = INIT; // static?
    char nombre[_Buffer_Size] = {0}, mayusculas[_Buffer_Size] = {0};
    uint8_t i = 0;
 
