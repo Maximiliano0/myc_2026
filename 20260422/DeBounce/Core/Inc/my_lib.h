@@ -11,7 +11,7 @@
 #define SWITCH_PIN   GPIO_PIN_13
 #define SWITCH_OFF   GPIO_PIN_SET
 #define SWITCH_ON    GPIO_PIN_RESET
-#define DeBounce_Delay	50 // 50 [ms]
+#define DeBounce_Delay	20 // 20 [ms]
 
 #define BASE_TIMER TIM2
 #define CORE_CLK  16000000 // 16 MHz
@@ -31,6 +31,6 @@ void SystemClock_Config(void); // CLK Configuration
 void GPIO_Config(void); // GPIO Configuration
 void TIM2_Config(void); // TIM2 Configuration
 void TIM2_IRQHandler(void); // TIM2 IRQ Routine
-Button_State SWICTH_Filtered(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+Button_State SWITCH_Filtered(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 
 /* Private Function Prototypes ------------*/

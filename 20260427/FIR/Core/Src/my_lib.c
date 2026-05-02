@@ -7,7 +7,7 @@
 TIM_HandleTypeDef hbasetim; // TIM3 Handler Variable
 TIM_HandleTypeDef hpwm; // TIM2 Handler Variable
 ADC_HandleTypeDef hadc; // ADC Handler Variable
-uint32_t debounce = 0, sampling = 0;
+volatile uint32_t debounce = 0, sampling = 0;
 
 /* Public Function Definitions ------------*/
 
@@ -220,7 +220,7 @@ Click_State  CLICK_Detect(GPIO_TypeDef* GPIO_PORT, uint16_t GPIO_PIN){
 	Button_State button_state = Non_Pressed;
 	static uint8_t state = 0;
 
-	/* Rising Edge Detection FSM */
+	/* Click Detection FSM */
 	switch(state){
 		case 0: // Non Pressed
 			button_state = (HAL_GPIO_ReadPin(GPIO_PORT, GPIO_PIN)==SWITCH_ON)?	Pressed:Non_Pressed;
@@ -229,13 +229,18 @@ Click_State  CLICK_Detect(GPIO_TypeDef* GPIO_PORT, uint16_t GPIO_PIN){
 				state = 1;
 			}
 			break;
-		case 1: // Pressed
-			if(debounce == 0){
+		case 1: // Pressed - esperando que termine el filtro anti-rebote
+			if(debounce == 0){ // Termino el Delay
 				button_state = (HAL_GPIO_ReadPin(GPIO_PORT, GPIO_PIN)==SWITCH_ON)?	Pressed:Non_Pressed;
-				if(button_state == Non_Pressed){
-					state = 0;
-					return(Clicked);
-				}
+				if(button_state == Pressed)	state = 2; // Confirmado: esperar release
+				else state = 0; // Era rebote/glitch: descartar
+			}
+			break;
+		case 2: // Confirmado presionado - esperando que el usuario suelte
+			button_state = (HAL_GPIO_ReadPin(GPIO_PORT, GPIO_PIN)==SWITCH_ON)?	Pressed:Non_Pressed;
+			if(button_state == Non_Pressed){ // Levantaron el dedo
+				state = 0;
+				return(Clicked);
 			}
 			break;
 		default:

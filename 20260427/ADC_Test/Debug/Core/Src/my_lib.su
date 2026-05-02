@@ -4,5 +4,5 @@
 ../Core/Src/my_lib.c:138:6:TIM3_Config	32	static
 ../Core/Src/my_lib.c:171:6:TIM2_Config	64	static
 ../Core/Src/my_lib.c:216:14:CLICK_Detect	24	static
-../Core/Src/my_lib.c:248:6:ADC_Config	24	static
-../Core/Src/my_lib.c:276:6:TIM3_IRQHandler	8	static
+../Core/Src/my_lib.c:253:6:ADC_Config	24	static
+../Core/Src/my_lib.c:281:6:TIM3_IRQHandler	8	static

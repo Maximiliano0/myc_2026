@@ -30,7 +30,7 @@ int main(void)
 		  // ADC Start
 		  HAL_ADC_Start(&hadc);
 		  // Poll for 100us
-		  HAL_ADC_PollForConversion ( &hadc, 100);
+		  HAL_ADC_PollForConversion(&hadc, 100);
 		  // Read Value
 		  counts = HAL_ADC_GetValue(&hadc);
 		  // ADC Stop

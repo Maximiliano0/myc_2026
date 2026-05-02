@@ -60,8 +60,8 @@ all: main-build
 main-build: ADC_Test.elf secondary-outputs
 
 # Tool invocations
-ADC_Test.elf ADC_Test.map: $(OBJS) $(USER_OBJS) C:\Users\maxvega\Documents\UCA\Microcontroladores\ II\DSP\Sources\ADC_Test\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "ADC_Test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\UCA\Microcontroladores II\DSP\Sources\ADC_Test\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+ADC_Test.elf ADC_Test.map: $(OBJS) $(USER_OBJS) C:\Users\maxvega\Documents\Micros\20260427\ADC_Test\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "ADC_Test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\Micros\20260427\ADC_Test\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -40,6 +40,7 @@ typedef enum{
 	Non_Clicked = 0
 }Click_State;
 
+
 /* Public Function Prototypes ------------*/
 uint8_t Hw_Init(void); // Hardware Configuration
 void SystemClock_Config(void); // CLK Configuration

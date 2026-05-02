@@ -60,8 +60,8 @@ all: main-build
 main-build: Button_PWM.elf secondary-outputs
 
 # Tool invocations
-Button_PWM.elf Button_PWM.map: $(OBJS) $(USER_OBJS) C:\Users\maxvega\Documents\UCA\Microcontroladores\ II\DSP\Sources\Button_PWM\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Button_PWM.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\UCA\Microcontroladores II\DSP\Sources\Button_PWM\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Button_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Button_PWM.elf Button_PWM.map: $(OBJS) $(USER_OBJS) C:\Users\maxvega\Documents\Micros\20260420\Button_PWM\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Button_PWM.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\Micros\20260420\Button_PWM\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Button_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

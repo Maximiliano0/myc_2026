@@ -2,7 +2,7 @@
 #include "main.h"
 
 /* Global variables ----*/
-extern uint8_t counter;
+extern volatile uint8_t counter;
 
 /* Main Function ----*/
 int main(void)
@@ -14,7 +14,7 @@ int main(void)
   while (1)
   {
 	  /* Change LED state when Button is Pressed */
-	  if(SWICTH_Filtered(SWITCH_PORT, SWITCH_PIN)==Pressed) HAL_GPIO_WritePin(LED_PORT, LED_PIN, LED_ON);
+	  if(SWITCH_Filtered(SWITCH_PORT, SWITCH_PIN)==Pressed) HAL_GPIO_WritePin(LED_PORT, LED_PIN, LED_ON);
 	  else HAL_GPIO_WritePin(LED_PORT, LED_PIN, LED_OFF);
   }
 }

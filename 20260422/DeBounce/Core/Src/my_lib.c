@@ -5,7 +5,7 @@
 
 /* Global Variable -----------------------*/
 TIM_HandleTypeDef hledtim; // TIM2 Handler Variable --> Software
-uint8_t counter = 0;
+volatile uint8_t counter = 0;
 
 /* Public Function Definitions ------------*/
 
@@ -138,37 +138,31 @@ void TIM2_Config(void){
 }
 
 /* Filtered Read Pin */
-Button_State  SWICTH_Filtered(GPIO_TypeDef* GPIO_PORT, uint16_t GPIO_PIN){
+Button_State  SWITCH_Filtered(GPIO_TypeDef* GPIO_PORT, uint16_t GPIO_PIN){
 
-	static Button_State actual_state = Non_Pressed, last_state = Non_Pressed;
+    static Button_State stable_state    = Non_Pressed;
+    static Button_State last_state = Non_Pressed;
+    Button_State actual_state;
 
 	/* Read Pin */
 	actual_state = (HAL_GPIO_ReadPin(GPIO_PORT, GPIO_PIN)==SWITCH_ON)?	Pressed:Non_Pressed;
 
 	/* Check if There is a State Change */
-	if((actual_state != last_state) && (counter==0)){
-		/* Delay Start */
-		counter = DeBounce_Delay;
+	if(actual_state != last_state){
 		/* Save previous state */
 		last_state = actual_state;
+		/* Delay Start */
+		counter = DeBounce_Delay;
 	}
 	else{
 		/* Delay Ended */
-		if((counter==0) && (last_state==actual_state)){
+		if((counter==0) && (last_state != stable_state)){
 			/* If its maintain equal after DeBounce_Delay */
-			return(actual_state);
+			stable_state = last_state;
 		}
 	}
 
-	/* Delay ~ 10 [ms] */
-	// OPCION PARA DESAPROBAR
-	// for(uint32_t i=0; i<1000; i++);
-
-	// OTRA FORMA DE DESAPROBAR
-	// counter = 10
-	// while(counter!=0);
-
-	return(Non_Pressed);
+	return(stable_state);
 }
 
 
