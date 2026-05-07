@@ -1,0 +1,208 @@
+18:00:23 **** Incremental Build of configuration Debug for project USART_Polling ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "USART_Polling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\Micros II\20260507\USART_Polling\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USART_Polling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: USART_Polling.elf
+ 
+arm-none-eabi-size  USART_Polling.elf 
+arm-none-eabi-objdump -h -S USART_Polling.elf  > "USART_Polling.list"
+   text	   data	    bss	    dec	    hex	filename
+   8512	     12	   1644	  10168	   27b8	USART_Polling.elf
+Finished building: default.size.stdout
+ 
+Finished building: USART_Polling.list
+ 
+18:04:07 **** Incremental Build of configuration Debug for project USART_Polling ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "USART_Polling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\Micros II\20260507\USART_Polling\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USART_Polling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: USART_Polling.elf
+ 
+arm-none-eabi-size  USART_Polling.elf 
+arm-none-eabi-objdump -h -S USART_Polling.elf  > "USART_Polling.list"
+   text	   data	    bss	    dec	    hex	filename
+   8512	     12	   1644	  10168	   27b8	USART_Polling.elf
+Finished building: default.size.stdout
+ 
+Finished building: USART_Polling.list
+ 
+18:05:20 **** Incremental Build of configuration Debug for project USART_Polling ****
+make -j8 all 
+arm-none-eabi-size  USART_Polling.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8512	     12	   1644	  10168	   27b8	USART_Polling.elf
+Finished building: default.size.stdout
+ 
+18:05:31 **** Incremental Build of configuration Debug for project USART_Polling ****
+make -j8 all 
+arm-none-eabi-size  USART_Polling.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8512	     12	   1644	  10168	   27b8	USART_Polling.elf
+Finished building: default.size.stdout
+ 
+18:06:37 **** Incremental Build of configuration Debug for project USART_Polling ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_it.o"
+arm-none-eabi-gcc -o "USART_Polling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\Micros II\20260507\USART_Polling\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USART_Polling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: USART_Polling.elf
+ 
+arm-none-eabi-size  USART_Polling.elf 
+arm-none-eabi-objdump -h -S USART_Polling.elf  > "USART_Polling.list"
+   text	   data	    bss	    dec	    hex	filename
+   8516	     12	   1644	  10172	   27bc	USART_Polling.elf
+Finished building: default.size.stdout
+ 
+Finished building: USART_Polling.list
+ 
+18:11:42 **** Build of configuration Debug for project USART_Polling ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/system_stm32f4xx.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -o "USART_Polling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\Micros\20260506\USART_Polling\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USART_Polling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: USART_Polling.elf
+ 
+arm-none-eabi-size  USART_Polling.elf 
+arm-none-eabi-objdump -h -S USART_Polling.elf  > "USART_Polling.list"
+   text	   data	    bss	    dec	    hex	filename
+   8512	     12	   1644	  10168	   27b8	USART_Polling.elf
+Finished building: default.size.stdout
+ 
+Finished building: USART_Polling.list
+ 
+18:11:55 **** Incremental Build of configuration Debug for project USART_Polling ****
+make -j8 all 
+arm-none-eabi-size  USART_Polling.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8512	     12	   1644	  10168	   27b8	USART_Polling.elf
+Finished building: default.size.stdout
+ 
+18:12:29 **** Incremental Build of configuration Debug for project USART_Polling ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "USART_Polling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\Micros\20260506\USART_Polling\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USART_Polling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: USART_Polling.elf
+ 
+arm-none-eabi-size  USART_Polling.elf 
+arm-none-eabi-objdump -h -S USART_Polling.elf  > "USART_Polling.list"
+   text	   data	    bss	    dec	    hex	filename
+   8524	     12	   1644	  10180	   27c4	USART_Polling.elf
+Finished building: default.size.stdout
+ 
+Finished building: USART_Polling.list
+ 
+18:15:48 **** Incremental Build of configuration Debug for project USART_Polling ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_it.o"
+arm-none-eabi-gcc -o "USART_Polling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\Micros\20260506\USART_Polling\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USART_Polling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: USART_Polling.elf
+ 
+arm-none-eabi-size  USART_Polling.elf 
+arm-none-eabi-objdump -h -S USART_Polling.elf  > "USART_Polling.list"
+   text	   data	    bss	    dec	    hex	filename
+   8516	     12	   1644	  10172	   27bc	USART_Polling.elf
+Finished building: default.size.stdout
+ 
+Finished building: USART_Polling.list
+ 
+18:24:06 **** Build of configuration Debug for project USART_Polling ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/system_stm32f4xx.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+../Src/main.c: In function 'main':
+../Src/main.c:27:11: warning: implicit declaration of function 'MX_USART2_UART_Init'; did you mean 'MX_USART1_UART_Init'? [-Wimplicit-function-declaration]
+   27 |           MX_USART2_UART_Init();
+      |           ^~~~~~~~~~~~~~~~~~~
+      |           MX_USART1_UART_Init
+../Src/main.c:33:38: error: 'huart2' undeclared (first use in this function); did you mean 'huart1'?
+   33 |                 if(HAL_UART_Receive(&huart2, rx_buffer, sizeof(rx_buffer), _TIMEOUT) == HAL_OK){
+      |                                      ^~~~~~
+      |                                      huart1
+../Src/main.c:33:38: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c: At top level:
+../Src/main.c:90:13: warning: 'MX_USART1_UART_Init' defined but not used [-Wunused-function]
+   90 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:34: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:24:16 **** Incremental Build of configuration Debug for project USART_Polling ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+../Src/main.c: In function 'main':
+../Src/main.c:27:11: warning: implicit declaration of function 'MX_USART2_UART_Init'; did you mean 'MX_USART1_UART_Init'? [-Wimplicit-function-declaration]
+   27 |           MX_USART2_UART_Init();
+      |           ^~~~~~~~~~~~~~~~~~~
+      |           MX_USART1_UART_Init
+../Src/main.c: At top level:
+../Src/main.c:90:13: warning: 'MX_USART1_UART_Init' defined but not used [-Wunused-function]
+   90 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -o "USART_Polling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\Micros II\20260507\USART_Polling\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USART_Polling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_2.0.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.100.202509120712/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `main':
+C:/Users/maxvega/Documents/Micros II/20260507/USART_Polling/Debug/../Src/main.c:27:(.text.main+0x1a): undefined reference to `MX_USART2_UART_Init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: USART_Polling.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:24:28 **** Incremental Build of configuration Debug for project USART_Polling ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "USART_Polling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\Micros II\20260507\USART_Polling\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USART_Polling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: USART_Polling.elf
+ 
+arm-none-eabi-size  USART_Polling.elf 
+arm-none-eabi-objdump -h -S USART_Polling.elf  > "USART_Polling.list"
+   text	   data	    bss	    dec	    hex	filename
+   8512	     12	   1644	  10168	   27b8	USART_Polling.elf
+Finished building: default.size.stdout
+ 
+Finished building: USART_Polling.list
+ 
+18:24:34 **** Incremental Build of configuration Debug for project USART_Polling ****
+make -j8 all 
+arm-none-eabi-size  USART_Polling.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8512	     12	   1644	  10168	   27b8	USART_Polling.elf
+Finished building: default.size.stdout
+ 
