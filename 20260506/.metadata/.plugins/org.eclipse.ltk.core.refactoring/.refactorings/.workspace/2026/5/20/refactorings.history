@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 2 resources" deleteContents="false" description="Delete 2 resources" element1="/USART_RxIT/Debug/USART_Polling.elf" element2="/USART_RxIT/Debug/USART_RxIT.elf" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1778532467452"/>
+</session>
