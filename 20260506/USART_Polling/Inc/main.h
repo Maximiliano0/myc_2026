@@ -58,12 +58,8 @@ void Error_Handler(void);
 
 /* Private defines -----------------------------------------------------------*/
 #define _BAUDRATE 9600
-#define _TIMEOUT HAL_MAX_DELAY
 #define _N 4
-#define USART_TX_Pin GPIO_PIN_2
-#define USART_TX_GPIO_Port GPIOA
-#define USART_RX_Pin GPIO_PIN_3
-#define USART_RX_GPIO_Port GPIOA
+#define _TIMEOUT 1000
 
 /* USER CODE BEGIN Private defines */
 

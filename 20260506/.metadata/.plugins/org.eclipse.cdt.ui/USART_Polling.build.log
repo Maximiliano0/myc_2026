@@ -1,10 +1,19 @@
-18:24:34 **** Incremental Build of configuration Debug for project USART_Polling ****
+17:34:00 **** Incremental Build of configuration Debug for project USART_Polling ****
 make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_it.o"
+arm-none-eabi-gcc -o "USART_Polling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\Micros\20260506\USART_Polling\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USART_Polling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: USART_Polling.elf
+ 
 arm-none-eabi-size  USART_Polling.elf 
+arm-none-eabi-objdump -h -S USART_Polling.elf  > "USART_Polling.list"
    text	   data	    bss	    dec	    hex	filename
-   8512	     12	   1644	  10168	   27b8	USART_Polling.elf
+   8516	     12	   1644	  10172	   27bc	USART_Polling.elf
 Finished building: default.size.stdout
  
+Finished building: USART_Polling.list
+ 
 
-18:24:34 Build Finished. 0 errors, 0 warnings. (took 256ms)
+17:34:01 Build Finished. 0 errors, 0 warnings. (took 817ms)
 

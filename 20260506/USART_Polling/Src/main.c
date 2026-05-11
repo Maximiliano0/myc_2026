@@ -2,18 +2,13 @@
 #include "main.h"
 
 /* Private variables ---------------------------------------------------------*/
-UART_HandleTypeDef huart2;
+UART_HandleTypeDef huart1;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_USART2_UART_Init(void);
+static void MX_USART1_UART_Init(void);
 
-
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
 int main(void)
 {
 
@@ -29,19 +24,19 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART2_UART_Init();
+  MX_USART1_UART_Init();
 
   /* Infinite loop */
   while (1)
   {
 	  // Recibo Cuando llegan los 4
-	  if(HAL_UART_Receive(&huart2, rx_buffer, sizeof(rx_buffer), _TIMEOUT) == HAL_OK){
+	  if(HAL_UART_Receive(&huart1, rx_buffer, sizeof(rx_buffer), _TIMEOUT) == HAL_OK){
 		  // Incremento las Letras
 		  for(i=0; i< sizeof(rx_buffer); i++){
 			  tx_buffer[i] = rx_buffer[i] + 1;
 		  }
 		  // Envio Bloqueante con Timeout de 1000 [ms]
-		  HAL_UART_Transmit(&huart2, tx_buffer, sizeof(tx_buffer), _TIMEOUT);
+		  HAL_UART_Transmit(&huart1, tx_buffer, sizeof(tx_buffer), _TIMEOUT);
 	  }
   }
 
@@ -89,27 +84,26 @@ void SystemClock_Config(void)
 }
 
 /**
-  * @brief USART2 Initialization Function
+  * @brief USART1 Initialization Function
   * @param None
   * @retval None
   */
-static void MX_USART2_UART_Init(void)
+static void MX_USART1_UART_Init(void)
 {
 
-  /* USER CODE END USART2_Init 1 */
-  huart2.Instance = USART2;
-  huart2.Init.BaudRate = _BAUDRATE;
-  huart2.Init.WordLength = UART_WORDLENGTH_8B;
-  huart2.Init.StopBits = UART_STOPBITS_1;
-  huart2.Init.Parity = UART_PARITY_NONE;
-  huart2.Init.Mode = UART_MODE_TX_RX;
-  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_UART_Init(&huart2) != HAL_OK)
+  /* USER CODE END USART1_Init 1 */
+  huart1.Instance = USART1;
+  huart1.Init.BaudRate = _BAUDRATE;
+  huart1.Init.WordLength = UART_WORDLENGTH_8B;
+  huart1.Init.StopBits = UART_STOPBITS_1;
+  huart1.Init.Parity = UART_PARITY_NONE;
+  huart1.Init.Mode = UART_MODE_TX_RX;
+  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_UART_Init(&huart1) != HAL_OK)
   {
     Error_Handler();
   }
-
 
 }
 
@@ -120,6 +114,7 @@ static void MX_USART2_UART_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
+
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
