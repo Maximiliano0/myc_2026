@@ -1,0 +1,9 @@
+../Core/Src/my_lib.c:17:9:Hw_Init	8	static
+../Core/Src/my_lib.c:42:6:SystemClock_Config	88	static
+../Core/Src/my_lib.c:76:6:GPIO_Config	120	static
+../Core/Src/my_lib.c:153:6:TIM3_Config	32	static
+../Core/Src/my_lib.c:186:6:TIM2_Config	64	static
+../Core/Src/my_lib.c:231:6:TIM4_Config	32	static
+../Core/Src/my_lib.c:274:14:CLICK_Detect	24	static
+../Core/Src/my_lib.c:311:6:TIM3_IRQHandler	8	static
+../Core/Src/my_lib.c:327:6:TIM4_IRQHandler	8	static
