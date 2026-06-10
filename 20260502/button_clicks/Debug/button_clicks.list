@@ -9,43 +9,43 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   2 .rodata       00000010  0800280c  0800280c  0000380c  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .ARM.extab    00000000  0800281c  0800281c  00004014  2**0
+  3 .ARM.extab    00000000  0800281c  0800281c  0000401c  2**0
                   CONTENTS
   4 .ARM          00000008  0800281c  0800281c  0000381c  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  5 .preinit_array 00000000  08002824  08002824  00004014  2**0
+  5 .preinit_array 00000000  08002824  08002824  0000401c  2**0
                   CONTENTS, ALLOC, LOAD, DATA
   6 .init_array   00000004  08002824  08002824  00003824  2**2
                   CONTENTS, ALLOC, LOAD, DATA
   7 .fini_array   00000004  08002828  08002828  00003828  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  8 .data         00000014  20000000  0800282c  00004000  2**2
+  8 .data         0000001c  20000000  0800282c  00004000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  9 .bss          000000b8  20000014  08002840  00004014  2**2
+  9 .bss          000000b8  2000001c  08002848  0000401c  2**2
                   ALLOC
- 10 ._user_heap_stack 00000604  200000cc  08002840  000040cc  2**0
+ 10 ._user_heap_stack 00000604  200000d4  08002848  000040d4  2**0
                   ALLOC
- 11 .ARM.attributes 00000030  00000000  00000000  00004014  2**0
+ 11 .ARM.attributes 00000030  00000000  00000000  0000401c  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00008c6c  00000000  00000000  00004044  2**0
+ 12 .debug_info   00008c6c  00000000  00000000  0000404c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00001693  00000000  00000000  0000ccb0  2**0
+ 13 .debug_abbrev 00001693  00000000  00000000  0000ccb8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000988  00000000  00000000  0000e348  2**3
+ 14 .debug_aranges 00000988  00000000  00000000  0000e350  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 00000756  00000000  00000000  0000ecd0  2**0
+ 15 .debug_rnglists 00000756  00000000  00000000  0000ecd8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  00015204  00000000  00000000  0000f426  2**0
+ 16 .debug_macro  00015204  00000000  00000000  0000f42e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000a674  00000000  00000000  0002462a  2**0
+ 17 .debug_line   0000a674  00000000  00000000  00024632  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0008752b  00000000  00000000  0002ec9e  2**0
+ 18 .debug_str    0008752b  00000000  00000000  0002eca6  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  000b61c9  2**0
+ 19 .comment      00000043  00000000  00000000  000b61d1  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00002568  00000000  00000000  000b620c  2**2
+ 20 .debug_frame  00002568  00000000  00000000  000b6214  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000071  00000000  00000000  000b8774  2**0
+ 21 .debug_line_str 00000071  00000000  00000000  000b877c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -62,7 +62,7 @@ Disassembly of section .text:
  80001a6:	2301      	movs	r3, #1
  80001a8:	7023      	strb	r3, [r4, #0]
  80001aa:	bd10      	pop	{r4, pc}
- 80001ac:	20000014 	.word	0x20000014
+ 80001ac:	2000001c 	.word	0x2000001c
  80001b0:	00000000 	.word	0x00000000
  80001b4:	080027f4 	.word	0x080027f4
 
@@ -75,7 +75,7 @@ Disassembly of section .text:
  80001c2:	f3af 8000 	nop.w
  80001c6:	bd08      	pop	{r3, pc}
  80001c8:	00000000 	.word	0x00000000
- 80001cc:	20000018 	.word	0x20000018
+ 80001cc:	20000020 	.word	0x20000020
  80001d0:	080027f4 	.word	0x080027f4
 
 080001d4 <__aeabi_uldivmod>:
@@ -433,8 +433,8 @@ int main(void)
  8000560:	635a      	str	r2, [r3, #52]	@ 0x34
 	  if(CLICK_Detect(BTN_USER) == Clicked){
  8000562:	e7db      	b.n	800051c <main+0x1c>
- 8000564:	200000c0 	.word	0x200000c0
- 8000568:	20000078 	.word	0x20000078
+ 8000564:	200000c8 	.word	0x200000c8
+ 8000568:	20000080 	.word	0x20000080
  800056c:	42c80000 	.word	0x42c80000
  8000570:	44c7e000 	.word	0x44c7e000
 
@@ -837,7 +837,7 @@ void TIM3_Config(void){
  80007be:	46bd      	mov	sp, r7
  80007c0:	bd80      	pop	{r7, pc}
  80007c2:	bf00      	nop
- 80007c4:	20000030 	.word	0x20000030
+ 80007c4:	20000038 	.word	0x20000038
  80007c8:	40000400 	.word	0x40000400
 
 080007cc <TIM2_Config>:
@@ -962,7 +962,7 @@ void TIM2_Config(void){
  800087a:	46bd      	mov	sp, r7
  800087c:	bd80      	pop	{r7, pc}
  800087e:	bf00      	nop
- 8000880:	20000078 	.word	0x20000078
+ 8000880:	20000080 	.word	0x20000080
 
 08000884 <CLICK_Detect>:
 
@@ -1123,7 +1123,7 @@ Click_State  CLICK_Detect(Button_Id id){
  800096c:	46bd      	mov	sp, r7
  800096e:	bd80      	pop	{r7, pc}
  8000970:	20000000 	.word	0x20000000
- 8000974:	200000c4 	.word	0x200000c4
+ 8000974:	200000cc 	.word	0x200000cc
 
 08000978 <TIM3_IRQHandler>:
 
@@ -1159,8 +1159,8 @@ void TIM3_IRQHandler(void)
  80009a2:	3301      	adds	r3, #1
  80009a4:	71fb      	strb	r3, [r7, #7]
  80009a6:	79fb      	ldrb	r3, [r7, #7]
- 80009a8:	2b00      	cmp	r3, #0
- 80009aa:	d0eb      	beq.n	8000984 <TIM3_IRQHandler+0xc>
+ 80009a8:	2b01      	cmp	r3, #1
+ 80009aa:	d9eb      	bls.n	8000984 <TIM3_IRQHandler+0xc>
   }
 
 	/* SAMPLING */
@@ -1195,9 +1195,9 @@ void TIM3_IRQHandler(void)
  80009d6:	46bd      	mov	sp, r7
  80009d8:	bd80      	pop	{r7, pc}
  80009da:	bf00      	nop
- 80009dc:	200000c4 	.word	0x200000c4
- 80009e0:	200000c0 	.word	0x200000c0
- 80009e4:	20000030 	.word	0x20000030
+ 80009dc:	200000cc 	.word	0x200000cc
+ 80009e0:	200000c8 	.word	0x200000c8
+ 80009e4:	20000038 	.word	0x20000038
 
 080009e8 <HAL_MspInit>:
 
@@ -1595,13 +1595,13 @@ LoopFillZerobss:
   ldr r0, =_sdata
  8000b70:	20000000 	.word	0x20000000
   ldr r1, =_edata
- 8000b74:	20000014 	.word	0x20000014
+ 8000b74:	2000001c 	.word	0x2000001c
   ldr r2, =_sidata
  8000b78:	0800282c 	.word	0x0800282c
   ldr r2, =_sbss
- 8000b7c:	20000014 	.word	0x20000014
+ 8000b7c:	2000001c 	.word	0x2000001c
   ldr r4, =_ebss
- 8000b80:	200000cc 	.word	0x200000cc
+ 8000b80:	200000d4 	.word	0x200000d4
 
 08000b84 <ADC_IRQHandler>:
  * @retval None       
@@ -1735,9 +1735,9 @@ __weak HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
  8000c1a:	3708      	adds	r7, #8
  8000c1c:	46bd      	mov	sp, r7
  8000c1e:	bd80      	pop	{r7, pc}
- 8000c20:	20000008 	.word	0x20000008
- 8000c24:	20000010 	.word	0x20000010
- 8000c28:	2000000c 	.word	0x2000000c
+ 8000c20:	20000010 	.word	0x20000010
+ 8000c24:	20000018 	.word	0x20000018
+ 8000c28:	20000014 	.word	0x20000014
 
 08000c2c <HAL_IncTick>:
  * @note This function is declared as __weak to be overwritten in case of other 
@@ -1763,8 +1763,8 @@ __weak void HAL_IncTick(void)
  8000c44:	f85d 7b04 	ldr.w	r7, [sp], #4
  8000c48:	4770      	bx	lr
  8000c4a:	bf00      	nop
- 8000c4c:	20000010 	.word	0x20000010
- 8000c50:	200000c8 	.word	0x200000c8
+ 8000c4c:	20000018 	.word	0x20000018
+ 8000c50:	200000d0 	.word	0x200000d0
 
 08000c54 <HAL_GetTick>:
   * @note This function is declared as __weak to be overwritten in case of other 
@@ -1784,7 +1784,7 @@ __weak uint32_t HAL_GetTick(void)
  8000c60:	f85d 7b04 	ldr.w	r7, [sp], #4
  8000c64:	4770      	bx	lr
  8000c66:	bf00      	nop
- 8000c68:	200000c8 	.word	0x200000c8
+ 8000c68:	200000d0 	.word	0x200000d0
 
 08000c6c <__NVIC_SetPriorityGrouping>:
            In case of a conflict between priority grouping and available
@@ -3978,8 +3978,8 @@ HAL_StatusTypeDef HAL_RCC_ClockConfig(RCC_ClkInitTypeDef  *RCC_ClkInitStruct, ui
  80018a4:	40023c00 	.word	0x40023c00
  80018a8:	40023800 	.word	0x40023800
  80018ac:	0800280c 	.word	0x0800280c
- 80018b0:	20000008 	.word	0x20000008
- 80018b4:	2000000c 	.word	0x2000000c
+ 80018b0:	20000010 	.word	0x20000010
+ 80018b4:	20000014 	.word	0x20000014
 
 080018b8 <HAL_RCC_GetSysClockFreq>:
   *
