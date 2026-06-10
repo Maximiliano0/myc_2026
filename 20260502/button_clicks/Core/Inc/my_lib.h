@@ -44,7 +44,7 @@ typedef enum{
 	BTN_USER = 0,
 	// BTN_NEXT,
 	// BTN_PREV,
-	BTN_COUNT // Array Size
+	BTN_COUNT = 1 // Array Size
 }Button_Id;
 
 typedef struct{

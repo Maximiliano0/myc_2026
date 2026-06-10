@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (13.3.rel1)
+# Toolchain: GNU Tools for STM32 (14.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -60,8 +60,8 @@ all: main-build
 main-build: button_clicks.elf secondary-outputs
 
 # Tool invocations
-button_clicks.elf button_clicks.map: $(OBJS) $(USER_OBJS) C:\Users\maxvega\Documents\Micros\20260502\button_clicks\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "button_clicks.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\Micros\20260502\button_clicks\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="button_clicks.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+button_clicks.elf button_clicks.map: $(OBJS) $(USER_OBJS) C:\Users\maxvega\Documents\Pruebas\myc_2026\20260502\button_clicks\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "button_clicks.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\maxvega\Documents\Pruebas\myc_2026\20260502\button_clicks\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="button_clicks.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
